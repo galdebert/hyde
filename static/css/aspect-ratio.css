@@ -1,0 +1,15 @@
+/*
+https://stackoverflow.com/questions/1495407/maintain-the-aspect-ratio-of-a-div-with-css
+usage: <div class="aspect_ratio_4_3"><div>my stuff</div></div>
+*/
+
+div.aspect_ratio_4_3 {
+  width: 100%;
+  padding-bottom: 75%;
+  position: relative;
+}
+
+div.aspect_ratio_4_3 > div {
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+}

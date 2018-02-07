@@ -19,7 +19,13 @@
   <link rel="stylesheet" href="{{ .Site.BaseURL }}css/poole.css">
   <link rel="stylesheet" href="{{ .Site.BaseURL }}css/syntax.css">
   <link rel="stylesheet" href="{{ .Site.BaseURL }}css/hyde.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/aspect-ratio.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+  {{ if .Site.Params.use_icons }}
+    <!-- added by galdebert to use the github icon class="fa fa-github-square" -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  {{ end }}
 
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
